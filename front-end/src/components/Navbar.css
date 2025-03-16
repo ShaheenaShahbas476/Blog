@@ -1,0 +1,55 @@
+/* Basic styles for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff; /* White background */
+    padding: 1rem 2rem; /* Padding around the navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Logo or Brand Name */
+.navbar .brand {
+    color: #007bff; /* Primary color for brand (blue) */
+    font-size: 1.5rem; /* Larger font size for brand */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Navigation Links */
+.navbar .nav-links {
+    display: flex; /* Align links horizontally */
+    gap: 1.5rem; /* Space between links */
+}
+
+.navbar .nav-links a {
+    color: #007bff; /* Primary color for links (blue) */
+    text-decoration: none; /* Remove underline */
+    padding: 0.5rem 1rem; /* Padding for links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for links */
+.navbar .nav-links a:hover {
+    background-color: #007bff; /* Primary color background on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align to the left */
+    }
+
+    .navbar .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        width: 100%; /* Full width */
+    }
+
+    .navbar .nav-links a {
+        width: 100%; /* Full width links */
+        text-align: center; /* Center text */
+        padding: 1rem; /* More padding for mobile */
+    }
+}

@@ -1,0 +1,15 @@
+.category-filter {
+    margin: 20px 0;
+  }
+  
+  .button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Allows buttons to wrap to the next line if needed */
+  }
+  
+  .category-button {
+    border-radius: 20px; /* Makes the corners round */
+    margin: 5px; /* Adds space between buttons */
+  }
+  
